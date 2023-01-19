@@ -7,7 +7,7 @@ pipeline {
             steps {
                  
                 
-               sh  'zip yoa-V-${BUILD_NUMBER}.zip * -x Jenkinsfile README.md'
+               sh  'zip koami-V-${BUILD_NUMBER}.zip * -x Jenkinsfile README.md'
                
             }
         }
