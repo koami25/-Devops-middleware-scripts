@@ -3,30 +3,12 @@ pipeline {
 
     stages {
         
-        stage('build') {
+        stage('create a zip file') {
             steps {
-                echo 'Hello build'
+               zip yao.z-${ADD_NUMBER}
             }
         }
-        stage('test') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-        stage('deploy') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-        stage('DONE') {
-            steps {
-                echo 'done'
-            }
-        }
-        stage('Heloo') {
-            steps {
-                echo 'Hello World'
-            }
-        }
+        
+        
     }
 }
