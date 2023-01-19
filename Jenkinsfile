@@ -5,7 +5,7 @@ pipeline {
         
         stage('create zip file ') {
             steps {
-                zip yao-v${BUILD_NUMBER}.zip * -x jenkinsfile README
+                zip yao-v${BUILD_NUMBER}.zip * --exclude jenkinsfile README
             }
         }
     }
