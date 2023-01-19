@@ -5,7 +5,10 @@ pipeline {
         
         stage('create zip file ') {
             steps {
-                zip middlewareV$-{BUILD_NUMBER}.zip *-x Jenkinsfile
+                 script{
+                
+                 zip yoa-V$-{BUILD_NUMBER}.zip *-x Jenkinsfile
+               }
             }
         }
     }
