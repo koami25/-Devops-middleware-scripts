@@ -7,7 +7,7 @@ pipeline {
             steps {
                  
                 
-               sh  'zip yoa-V-${BUILD_NUMBER}.zip *-x Jenkinsfile'
+               sh  'zip yoa-V-${BUILD_NUMBER}.zip * --exclude Jenkinsfile README.md'
                
             }
         }
