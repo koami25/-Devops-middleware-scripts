@@ -5,7 +5,7 @@ pipeline {
         
         stage('create a zip file') {
             steps {
-               zip yao.zip-V-${ADD_NUMBER}
+               zip yao-V-${ADD_NUMBER}.zip
             }
         }
         
