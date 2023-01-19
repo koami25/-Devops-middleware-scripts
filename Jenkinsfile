@@ -7,7 +7,7 @@ pipeline {
             steps {
                  
                 
-               sh  'zip yawalove-V-${BUILD_NUMBER}.zip * -x Jenkinsfile README.md'
+               sh  'zip yawalove1-V-${BUILD_NUMBER}.zip * -x Jenkinsfile README.md'
                
             }
         }
