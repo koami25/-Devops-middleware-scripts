@@ -7,7 +7,7 @@ pipeline {
             steps {
                  script{
                 
-                 zip yoa-V$-{BUILD_NUMBER}.zip *-x Jenkinsfile
+                 zip yoa-V-${BUILD_NUMBER}.zip *-x Jenkinsfile
                }
             }
         }
