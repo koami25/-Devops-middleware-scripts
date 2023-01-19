@@ -3,10 +3,10 @@ pipeline {
 
     stages {
         
-        stage('create a zip file') {
+        stage('create zip file ') {
             steps {
-            zip MIDDLE-V-${BUILD_NUMBER}.zip* -x jenkinsfile README.md
+                zip yao-v-${BUILD_NUMBER}.zip* -x jenkinsfile README
             }
-        }    
+        }
     }
 }
